@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ycC-3H-hEe">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fUf-ge-9M8">
+            <objects>
+                <viewController id="7dU-qv-KYd" customClass="ViewController" customModule="Animation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yX8-XH-pKd"/>
+                        <viewControllerLayoutGuide type="bottom" id="B5s-46-hmy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WnP-p9-vv0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MSRInfo_Main_Cup_02" translatesAutoresizingMaskIntoConstraints="NO" id="H2O-fA-sGU" userLabel="LidImageView">
+                                <rect key="frame" x="126" y="320" width="122" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="mTF-Fc-a7J"/>
+                                    <constraint firstAttribute="height" constant="44" id="mab-ch-Var"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MSRInfo_Main_Cup_01" translatesAutoresizingMaskIntoConstraints="NO" id="kbp-TJ-kvU" userLabel="CupImageView">
+                                <rect key="frame" x="126" y="350.5" width="122" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="166" id="HDc-IF-mNu"/>
+                                    <constraint firstAttribute="width" constant="122" id="V3z-ky-KVe"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starbucks" translatesAutoresizingMaskIntoConstraints="NO" id="bt0-Eb-Bm3" customClass="app">
+                                <rect key="frame" x="157" y="170" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="PET-tc-6PU"/>
+                                    <constraint firstAttribute="width" constant="60" id="rei-Pz-Bvd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uO1-UZ-HSL" userLabel="RestartButton">
+                                <rect key="frame" x="156.5" y="540.5" width="61" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="89a-0M-KmZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartStarAnimation:" destination="7dU-qv-KYd" eventType="touchUpInside" id="Ble-bx-LGO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starbucks Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkv-1N-2aG">
+                                <rect key="frame" x="60.5" y="78" width="254.5" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="eFJ-0L-9wX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.4471247196" blue="0.29815232749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kbp-TJ-kvU" firstAttribute="top" secondItem="H2O-fA-sGU" secondAttribute="bottom" constant="-14" id="1Ef-dQ-Xgg"/>
+                            <constraint firstItem="zkv-1N-2aG" firstAttribute="centerX" secondItem="WnP-p9-vv0" secondAttribute="centerX" id="Heg-Tx-QCe"/>
+                            <constraint firstItem="H2O-fA-sGU" firstAttribute="centerX" secondItem="WnP-p9-vv0" secondAttribute="centerX" id="Lo5-pd-idT"/>
+                            <constraint firstItem="kbp-TJ-kvU" firstAttribute="centerY" secondItem="WnP-p9-vv0" secondAttribute="centerY" multiplier="1.3" id="Opx-Dx-7Hz"/>
+                            <constraint firstItem="kbp-TJ-kvU" firstAttribute="centerX" secondItem="WnP-p9-vv0" secondAttribute="centerX" id="cRc-Jp-ymQ"/>
+                            <constraint firstItem="zkv-1N-2aG" firstAttribute="centerY" secondItem="WnP-p9-vv0" secondAttribute="centerY" multiplier="0.3" id="d7P-lx-Id9"/>
+                            <constraint firstItem="uO1-UZ-HSL" firstAttribute="top" secondItem="kbp-TJ-kvU" secondAttribute="bottom" constant="24" id="gET-Jb-PLx"/>
+                            <constraint firstItem="bt0-Eb-Bm3" firstAttribute="centerX" secondItem="WnP-p9-vv0" secondAttribute="centerX" id="iLQ-jL-5nD"/>
+                            <constraint firstItem="bt0-Eb-Bm3" firstAttribute="centerY" secondItem="WnP-p9-vv0" secondAttribute="centerY" multiplier="0.6" id="lLz-ci-Svt"/>
+                            <constraint firstItem="uO1-UZ-HSL" firstAttribute="centerX" secondItem="WnP-p9-vv0" secondAttribute="centerX" id="zo1-I4-erq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hDS-fY-HU4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mw8-7r-vTU"/>
+                    <connections>
+                        <outlet property="cupImageView" destination="kbp-TJ-kvU" id="zi7-U6-mEI"/>
+                        <outlet property="lidImageView" destination="H2O-fA-sGU" id="UDq-kt-bsj"/>
+                        <outlet property="restartButton" destination="uO1-UZ-HSL" id="QE7-mI-kbM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dsc-Lv-Oga" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888.79999999999995" y="277.51124437781112"/>
+        </scene>
+        <!--StarFall_星巴克-->
+        <scene sceneID="n8F-wG-n8c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PbP-fo-erV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="StarFall_星巴克" id="oJ2-7r-Gnv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HeI-gh-LIG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="7dU-qv-KYd" kind="relationship" relationship="rootViewController" id="z4k-IM-zi8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UbG-9B-nDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.8000000000000007" y="569.86506746626696"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="asH-fJ-WUv">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ycC-3H-hEe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tu9-Ip-49h">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PbP-fo-erV" kind="relationship" relationship="viewControllers" id="O7G-l9-BMA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iIS-pj-FfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-841" y="963"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MSRInfo_Main_Cup_01" width="122" height="166"/>
+        <image name="MSRInfo_Main_Cup_02" width="122" height="44"/>
+        <image name="starbucks" width="60" height="60"/>
+    </resources>
+</document>
