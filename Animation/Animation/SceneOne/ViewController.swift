@@ -54,11 +54,11 @@ class ViewController: UIViewController {
         if #available(iOS 10.0, *){
             stopAnimation()
             lidImageView.layer.anchorPoint = CGPoint(x: 0, y: 1)
-            lidImageView.layer.position = CGPoint(x: lidImageView.frame.origin.x , y:  lidImageView.frame.origin.y + 66 )
+            lidImageView.layer.position = CGPoint(x: lidImageView.frame.origin.x - 61 , y:  lidImageView.frame.origin.y + 66 )
             UIView.animate(withDuration: 0.5, animations: {
                 self.lidImageView.transform = CGAffineTransform(rotationAngle: -CGFloat(Double.pi))
             })
-            timer = Timer.scheduledTimer(withTimeInterval: 0.0, repeats: true, block: { __ in
+            timer = Timer.scheduledTimer(withTimeInterval: 0.8, repeats: true, block: { __ in
                 self.createStarFallAnimtion()
             })
         }
@@ -106,8 +106,8 @@ class ViewController: UIViewController {
         }
         
         let starImageView = UIImageView.createStar()
-        
         cupImageView.addSubview(starImageView)
+        
         dynamicItems.append(starImageView)
         animator = UIDynamicAnimator(referenceView: cupImageView)
         gravity = UIGravityBehavior(items: dynamicItems)
